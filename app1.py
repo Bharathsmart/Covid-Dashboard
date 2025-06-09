@@ -33,6 +33,7 @@ options = [
 ]
 
 app = dash.Dash(__name__, external_stylesheets=[external_stylesheets[0]['href']])
+server = app.server
 
 app.layout = html.Div([
     html.H1("Corona Virus Dashboard", style={
